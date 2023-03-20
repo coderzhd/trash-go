@@ -1,0 +1,65 @@
+<!--pages/myhome/myhome.wxml-->
+<view class="view_contain">
+  <!-- 第一部分 -->
+  <view class="view_1">
+    <view class="view_image_text">
+      <image class="image_radius" src="{{userInfo.avatarUrl}}" />
+      <text>用户：{{userInfo.nickName}}</text>
+      <text>{{userInfo.gender}}   {{userInfo.city}}</text>
+    </view>
+  </view>
+  <!-- 第二部分 -->
+  <view class="view_2">
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="../../assets/iconfont/zhaoxiangji.png"></image>
+      <text class="text_saoyisao">拍照识别</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="../../assets/iconfont/yuyin.png"></image>
+      <text class="text_saoyisao">语音识别</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="../../assets/iconfont/xuexi.png"></image>
+      <text class="text_saoyisao">垃圾小学习</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="../../assets/iconfont/xiti.png"></image>
+      <text class="text_saoyisao">小测验</text>
+    </view>
+  </view>
+
+  <!-- 第三部分 -->
+  <view class="view_3">
+    
+    <view class="list-item">
+      <image class="item-image" src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/学习.png"></image>
+      <text class="item-text">我的学习</text>
+      <image class="image-jiantou" src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/jiantou.png"></image>
+    </view>
+    <view class="line"></view>
+    <view class="list-item">
+      <image class="item-image" src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/测试申请.png"></image>
+      <text class="item-text">我的测试</text>
+      <image class="image-jiantou" src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/jiantou.png"></image>
+    </view>
+    <view class="line"></view>
+    <view class="list-item">
+      <image class="item-image" src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/更新.png"></image>
+      <text class="item-text">版本更新</text>
+      <image class="image-jiantou" src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/jiantou.png" bindtap="showtip"></image>
+    </view>
+    <view class="line"></view>
+    <view class="list-item">
+      <image class="item-image" src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/播放记录.png"></image>
+      <text class="item-text">识别记录</text>
+      <image class="image-jiantou" src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/jiantou.png"></image>
+    </view>
+    <view class="line"></view>
+    <view class="list-item">
+      <image class="item-image" src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/分享_o.png"></image>
+      <text class="item-text">分享邀请</text>
+      <image class="image-jiantou" src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/jiantou.png"></image>
+    </view>
+    <view class="line"></view>
+  </view>
+</view>

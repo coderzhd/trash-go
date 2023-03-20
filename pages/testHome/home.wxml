@@ -1,0 +1,13 @@
+<!--pages/home/home.wxml-->
+<view class="page" >
+  <image class="back_ground" src="../../images/c.jpg" ></image>
+  <view class="page-title">请选择要挑战的试题：</view>
+  <view class="flex-box ">
+    <view class="flex-item"><view class="item bc_green" bindtap="toTestPage" data-testId="基础问题">基础问题</view></view>
+    <view class="flex-item"><view class="item bc_red" bindtap="toTestPage" data-testId="进阶试题">进阶试题</view></view>
+    <view class="flex-item"><view class="item bc_yellow" bindtap="toTestPage" data-testId="挑战自己">挑战自己</view></view>
+    <view class="flex-item"><view class="item bc_blue" bindtap="toTestPage" data-testId="分类能手">分类能手</view></view>
+    <view class="flex-item item-last"><view class="item bc_gray" bindtap="toTestPage" data-testId="应用生活">应用生活</view></view>
+    <!-- <view class="flex-item"><view class="item bc_green">302</view></view> -->
+  </view>
+</view>

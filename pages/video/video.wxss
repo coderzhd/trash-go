@@ -1,0 +1,35 @@
+/* pages/video/video.wxss */
+.preview-tips {
+  position: absolute;
+    bottom: 180px;
+  text-align: center;
+    margin: 30rpx 0;  
+    width: 100%;
+  }
+.preview-tips text {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 550;
+}
+#can {
+  position: absolute;
+  width: 100%;
+  height: 427px;
+}
+.video {
+    margin: 50px auto;
+    width: 100%;
+    height: 300px;
+}
+.btn-area{
+  position: absolute;
+  width: 100%;
+  bottom: 94px;
+  text-align: center;
+}
+.btn {
+  margin: 0 30px; 
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+  

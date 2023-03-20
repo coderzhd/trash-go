@@ -1,0 +1,30 @@
+<view class="body">  
+    <view class="search" bindtap="goSearch">
+        <van-search value="{{wastename}}" shape="round" placeholder="搜索" input-align="center"></van-search>
+    </view>
+    <view class="content">
+        <text class="perday_title">每日一识</text>
+        <view class="content_pic">
+            <image src="{{perday.pic_src}}"></image>
+        </view>
+        <view class="content_txt">
+            <view class="content_list_elem">
+                <view class="content_list_title">
+                    <text>{{perday.title}}：{{perday.category}}</text>
+                </view>
+                <view class="content_list_decs">
+                    <text decode="{{true}}">&emsp;&emsp;{{perday.decs}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="footer">
+        <view class="select_local" bindtap="goAlbums">
+            <text class="select_local_txt">从相册选择</text><van-icon name="arrow"/>
+        </view>
+        <button class="photo" bindtap="goCamera">
+            <image class="photo_img" src="../../images/phot_img.png"></image>
+            <text class="photo_txt" >拍照识别</text>
+        </button>
+    </view>
+</view>  

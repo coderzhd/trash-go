@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "垃圾分类小测试结果",
+  "usingComponents": {
+    "wrong-modal":"/components/wrongModal/wrongModal"
+  }
+}

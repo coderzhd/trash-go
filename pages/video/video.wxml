@@ -1,0 +1,23 @@
+<view class="page-body">
+  <view class="page-body-wrapper">
+    <camera  device-position="back" flash="off" binderror="error" style="width: 100%; height: 472px;position: absolute;"></camera>
+    <canvas id="can" wx:if="{{canvasShow}}" style="width: 100%;height: 472px;position: absolute;z-index: 999;" canvas-id="canvas">
+    </canvas>
+    <view class="preview-tips">
+      <text>{{class_name}}</text>
+      <text>{{category}}</text>
+    </view>
+    <!-- <view class="preview-tips"></view> -->
+    <view class="btn-area">
+      <!-- <button type="primary" style="z-index: 9;" bindtap="takePhoto">请靠近拍照</button>
+      <button type="primary" style="z-index: 9;" bindtap="startPhoto">开始检测</button> -->
+      <van-button class="btn btn1" round type="primary"  bind:click="startPhoto">开始检测</van-button>
+      <van-button class="btn btn2" round type="primary"  bind:click="takePhoto">拍照识别</van-button>
+      
+      <button type="primary" style="z-index: 9;display: none;" bindtap="stopPhoto">stop</button>
+    </view>
+    
+    <!-- <image wx:if="{{src}}" mode="widthFix" src="{{src}}"></image> -->
+    <!-- <van-popup show="{{ show }}" bind:close="onClose">内容</van-popup> -->
+  </view>
+</view>

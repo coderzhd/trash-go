@@ -1,0 +1,40 @@
+<!--pages/showResult/showResult.wxml-->
+<view>
+    <image class="user_shot" src="{{src}}"></image>
+</view>
+<van-popup
+  show="true"
+  round="true"
+  close-icon="close"
+  position="bottom"
+  custom-style="height: 70%;padding: 0 10px"
+> 
+    <view class="result">
+        <image class="category_img" src="{{category_img}}"></image> 
+        <text class="category_name">{{second_label}}属于{{category_name}}</text>
+    </view>
+    <van-divider />
+    <view>
+        <view class="title">
+            <van-icon name="star" size="20px" color="#FF8800"/>
+            <text class="title_txt">{{category_name}}:</text>
+        </view>
+        <view class="content">
+            <text class="content_txt" decode="{{true}}">&emsp;&emsp;{{category_content}}</text>
+        </view>
+        <van-divider />
+        <view class="title">
+            <van-icon name="smile" size="20px" color="#FF8800"/>
+            <text class="title_txt">常见物品:</text>
+        </view>
+        <view class="content">
+            <text class="content_txt" decode="{{true}}">&emsp;&emsp;{{category_decs}}</text>
+        </view>
+        <view class="footer">
+        <button class="photo" bindtap="goCamera">
+            <image class="photo_img" src="../../images/phot_img.png"></image>
+            <text class="photo_txt" >继续拍照</text>
+        </button>
+    </view>
+    </view>
+</van-popup>

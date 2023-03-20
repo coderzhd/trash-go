@@ -1,0 +1,93 @@
+<view class="container">
+    <view class="header">
+        <image src="../../images/background.png"></image>
+    </view>
+    <view class="nav">
+        <view class="search" bindtap="goSearch">
+            <van-search value="{{wastename}}" show-action shape="round" placeholder="请输入垃圾名称"></van-search>
+        </view>
+        <view class="nav_list">
+            <van-row class="van-row">
+                
+                    <van-col class="van-col" span="6">
+                        <view bindtap="goCamera">
+                            <image src="../../assets/iconfont/zhaoxiangji.png"></image>
+                            <view class="nav_list_txt">拍照识别</view>
+                        </view>
+                    </van-col>
+
+                <van-col class="van-col" span="6">
+                    <view bindtap="goVoice">
+                        <image src="../../assets/iconfont/yuyin.png"></image>
+                        <view class="nav_list_txt">语音识别</view>
+                    </view>
+                </van-col>
+                <van-col class="van-col" span="6">
+                    <view bindtap="goStudy">
+                        <image class="img_large" src="../../assets/iconfont/xuexi.png"></image>
+                        <view class="nav_list_txt">垃圾小学习</view>
+                    </view>
+                    </van-col>
+                <van-col class="van-col" span="6">
+                    <view bindtap="goTest">
+                        <image src="../../assets/iconfont/xiti.png"></image>
+                        <view class="nav_list_txt">小测验</view>
+                    </view>
+                    </van-col>
+            </van-row>
+        </view>
+    </view>
+    <view class="content">
+        <view class="content_title"><text class="content_txt">垃圾分类指南</text></view>
+        
+        <view class="content_list">
+        <!-- 循环 -->
+            <view class="content_list_elem" wx:for="{{ColorList}}" bindtap="onClick"  data-index='{{index}}' wx:key>
+                <view class="content_list_img">
+                    <image class="content_list_elem_img" src="{{item.img}}"></image>
+                </view>
+                <view class="content_list_name">
+                    <view class="content_list_elem_txt">
+                            <text class="content_list_elem_name">{{item.title}}</text>
+                            <van-icon class="content_list_elem_more" name="arrow"/>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="news_list">
+        <view class="news_list_title"> <text>垃圾分类新闻资讯</text> </view>
+        <view class="news_item" bindtap="goNews">
+            <view class="news_title">为什么开始提倡垃圾分类？</view>
+            <view class="new_image">
+                <image src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/news1.png"></image>
+                <image src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/news_2.png"></image>
+                <image src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/news_3.png"></image>
+            </view>
+        </view>
+        <view class="news_item">
+            <view class="news_title">人民日报评论员：做好垃圾分类 推动绿色发展</view>
+            <view class="new_image">
+                <image src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/news_4.png"></image>
+                <image src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/封面1.png"></image>
+                <image src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/封面2.png"></image>
+            </view>
+        </view>
+        <view class="news_item">
+            <view class="news_title">垃圾分类宣传知识，您懂得分类吗？</view>
+            <view class="new_image">
+                <image src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/封面3.png"></image>
+                <image src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/封面4.png"></image>
+                <image src="cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/news_4.png"></image>
+            </view>
+        </view>
+    </view>
+
+    
+</view>
+<view class="footer">
+        <button class="photo" bindtap="goVideo">
+            <!-- <image class="photo_img" src="../../images/phot_img.png"></image> -->
+            <text class="photo_txt" >垃圾实时检测</text>
+        </button>
+</view> 

@@ -1,0 +1,36 @@
+<!--pages/login/login.wxml-->
+<!-- <view wx:if="{{canIUse}}">
+    <view class='header'>
+        <image src='cloud://cloud1-5gv14rmra0d5ec67.636c-cloud1-5gv14rmra0d5ec67-1311068477/微信.png'></image>
+    </view>
+    <view class="content">
+        <view>申请获取以下权限</view>
+        <text>获得你的公开信息（昵称，头像等）</text>
+    </view>
+
+    <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGetUserInfo">
+        授权登录
+    </button>
+</view>
+
+<view wx:else>请升级微信版本</view> -->
+<view class="container">
+    <view class='header'>
+        <image  src='cloud://cloud1-5gq9js3gd06c5e11.636c-cloud1-5gq9js3gd06c5e11-1311093666/small_study_video/视频和图/logo.png'></image>
+    </view>
+    <view class="content">
+        <view>申请获取以下权限</view>
+        <text>获得你的公开信息（昵称，头像等）</text>
+    </view>
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" class='bottom'> 授权登录 </button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='bottom'> 授权登录 </button>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+</view>

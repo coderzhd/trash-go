@@ -1,0 +1,77 @@
+/* pages/pic/pic.wxss */
+.body {
+    padding: 0 5px;
+}
+.photo {
+    position: relative;
+    /* background-color: red; */
+    height: 50px;
+    width: 40%;
+    border-radius: 30px;
+    color: #ffffff;
+    line-height: 50px;
+    text-align: center;
+    background: #00b09b;  /* fallback for old browsers */      background: -webkit-linear-gradient(to right, rgb(0, 176, 155), rgb(150, 201, 61));  /* Chrome 10-25, Safari 5.1-6 */      background: linear-gradient(to right, rgb(0, 176, 155), rgb(150, 201, 61)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+}
+.photo_img {
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+}
+.photo_txt {
+    position: absolute;
+    font-size: 19px;
+    right: 25px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+.content_txt {
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px ;
+    padding-bottom: 8px;
+}
+.footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+.select_local_txt{
+    margin-right: 5px;
+}
+.select_local {
+    color: #00b09b;
+    font-size: small;
+    margin: 10px 0;
+}
+.content_pic {
+    height: 270px;
+}
+.content_pic image{
+    width: 100%;
+    height: 270px;
+}
+.content_list_title{
+    text-align: center;
+    margin: 6px 0;
+}
+.content_list_decs{
+    padding: 5px 30px;
+    color: #cccccc;
+    font-size: smaller;
+}
+.perday_title{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 0;
+    text-align: center;
+}
